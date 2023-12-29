@@ -1,0 +1,16 @@
+# The defaults below could be overridden in $XDG_CONFIG_HOME/swaylock/config
+#  (~/.config/swaylock/config).
+#
+# Image path supports environment variables and shell expansions,
+# e.g. image=$HOME/Pictures/default.png
+image=$HOME/Bilder/Wallpaper/lea2k.jpg
+scaling=fill
+inside-color=CDEE6966
+ring-color=8EB33BFF
+key-hl-color=CDEE69FF
+inside-wrong-color=C7564666
+ring-wrong-color=C75646FF
+inside-ver-color=4E90A766
+ring-ver-color=4E90A7FF
+inside-clear-color=D0B03C66
+ring-clear-color=D0B03CFF
