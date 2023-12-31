@@ -9,7 +9,7 @@
     "modules-right": ["custom/terminal", "custom/firefox", "custom/mail", "custom/mastodon", "custom/file", "cpu", "memory", "disk", "temperature", "bluetooth", "network", "backlight", "pulseaudio", "battery", "custom/updates", "tray", "idle_inhibitor", "keyboard-state", "clock"],
     // Modules configuration
     "sway/workspaces": {
-         "disable-scroll": true,
+         "disable-scroll": false,
          "all-outputs": false,
          "format": "{icon}",
 	 "format-icons": {
@@ -63,7 +63,8 @@
     },
     "cpu": {
         "format": "{usage:2}:",
-        "tooltip": false
+        "tooltip": false,
+	"on-click": "exec foot htop"
     },
     "memory": {
         "format": "{}:"
@@ -96,28 +97,24 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
         "format-ethernet": "",
         "format-linked": "",
-        "format-disconnected": "⚠",
+        "format-disconnected": "",
         "tooltip-format": "{ifname} | {essid} | ({signalStrength}%)",
-	"on-click": "nm-connection-editor",
+	"on-click": "~/.local/bin/toggle-wifi.sh",
     },
         "bluetooth": {
 	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
         "format": "",
-        "format-disabled": "!",
-	"format-disabled": "", // an empty format will hide the module
+        "format-disabled": "",
 	"format-connected": "{num_connections}:",
 	"tooltip-format": "{controller_alias}\t{controller_address}",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"on-click": "blueman-manager",
+	"on-click": "~/.local/bin/toggle-bluetooth.sh",
 },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -162,7 +159,6 @@
 	"tooltip": false,
 	"format": "",
 	"on-click": "$HOME/.local/bin/swaystart_t 3",
-
     },
     "custom/mastodon": {
 	"tooltip": false,
@@ -175,3 +171,4 @@
 	"on-click": "exec nautilus",
     },
 }
+
