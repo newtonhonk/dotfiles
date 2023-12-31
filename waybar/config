@@ -104,7 +104,7 @@
         "format-linked": "",
         "format-disconnected": "",
         "tooltip-format": "{ifname} | {essid} | ({signalStrength}%)",
-	"on-click": "~/.local/bin/toggle-wifi.sh",
+	"on-click": "~/.config/sway/bin/toggle-wifi.sh",
     },
         "bluetooth": {
 	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
@@ -114,7 +114,7 @@
 	"tooltip-format": "{controller_alias}\t{controller_address}",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"on-click": "~/.local/bin/toggle-bluetooth.sh",
+	"on-click": "~/.config/sway/bin/toggle-bluetooth.sh",
 },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
