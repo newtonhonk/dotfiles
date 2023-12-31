@@ -7,9 +7,8 @@ set $mod Mod4
 
 # Screen
 set $screen eDP-1
-output $screen mode 2880x1800@96.011Hz 
 output $screen scale 2
-output $screen adaptive_sync on
+output $screen adaptive_sync off
 
 # Screenmode
 set $mode_screen "(1) 2.0 (2) 1.75 (3) 1.5 (4) AS:on (5) AS:off"
@@ -68,6 +67,8 @@ input * {
 input "type:touchpad" {
 	tap enabled
  	natural_scroll enabled
+	accel_profile adaptive
+        dwt enabled
 }
 
 
