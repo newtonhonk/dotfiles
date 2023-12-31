@@ -259,9 +259,9 @@ bindsym Mod4+Ctrl+p  exec grimshot save window
 
 # Apps
 
-bindsym $mod+ctrl+b exec $HOME/.local/bin/swaystart firefox 2
-bindsym $mod+ctrl+m exec $HOME/.local/bin/swaystart_t 3
-bindsym $mod+ctrl+t exec $HOME/.local/bin/swaystart dev.geopjr.Tuba 4
+bindsym $mod+ctrl+b exec $HOME/.config/sway/bin/swaystart firefox 2
+bindsym $mod+ctrl+m exec $HOME/.config/sway/bin/swaystart_t 3
+bindsym $mod+ctrl+t exec $HOME/.config/sway/bin/swaystart dev.geopjr.Tuba 4
 bindsym $mod+ctrl+k exec keepassxc
 bindsym ctrl+$mod+f exec nautilus
 bindsym $mod+ctrl+u exec foot sudo dnf update
