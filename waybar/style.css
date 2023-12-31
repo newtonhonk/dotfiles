@@ -54,6 +54,10 @@
     color: #8eb33b;
 }
 
+#network.disconnected, #bluetooth.disabled, #keyboard-state label.capslock.locked {
+    color: #8b0000;
+}
+
 #cpu, #temperature, #disk, #memory {
     color: #72b3cc;
 }
