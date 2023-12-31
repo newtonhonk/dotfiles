@@ -138,7 +138,7 @@
     "custom/updates": {
         "format": "{}",
         "interval": 3600,
-        "exec": "~/.local/bin/swayupdates",
+        "exec": "~/.config/sway/bin/swayupdates",
         "exec-if": "exit 0",
         "on-click": "exec foot -e sudo sh -c 'dnf update; pkill -SIGRTMIN+8 waybar'",
         "signal": 8
@@ -147,23 +147,23 @@
     "custom/terminal": {
 	"tooltip": false,
 	"format": "",
-	"on-click": "$HOME/.local/bin/swaystart foot 1",
+	"on-click": "$HOME/.config/sway/bin/swaystart foot 1",
     },
     "custom/firefox": {
 	"tooltip": false,
 	"format": "",
-	"on-click": "$HOME/.local/bin/swaystart firefox 2",
+	"on-click": "$HOME/.config/sway/bin/swaystart firefox 2",
     },
 
     "custom/mail": {
 	"tooltip": false,
 	"format": "",
-	"on-click": "$HOME/.local/bin/swaystart_t 3",
+	"on-click": "$HOME/.config/sway/bin/swaystart_t 3",
     },
     "custom/mastodon": {
 	"tooltip": false,
 	"format": "",
-	"on-click": "$HOME/.local/bin/swaystart dev.geopjr.Tuba 4",
+	"on-click": "$HOME/.config/sway/bin/swaystart dev.geopjr.Tuba 4",
     },
     "custom/file": {
 	"tooltip": false,
@@ -171,4 +171,3 @@
 	"on-click": "exec nautilus",
     },
 }
-
