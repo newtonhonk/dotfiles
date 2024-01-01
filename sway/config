@@ -17,7 +17,7 @@ mode $mode_screen {
 	bindsym 2 exec swaymsg "output * scale 1.75" && notify-send "Scale 1.75"; mode "default"
 	bindsym 3 exec swaymsg "output * scale 1.5" && notify-send "Scale 1.5"; mode "default"
 	bindsym 4 exec swaymsg "output * adaptive_sync on" && notify-send "Adaptive Sync: on"; mode "default"
-	bindsym 5 exec swaymsg "output * adaptive_sync on" && notify-send "Adaptive Sync: off"; mode "default"
+	bindsym 5 exec swaymsg "output * adaptive_sync off" && notify-send "Adaptive Sync: off"; mode "default"
 
 	# back to normal: Enter or Escape
 	bindsym Return mode "default"
