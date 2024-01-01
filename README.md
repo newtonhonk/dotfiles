@@ -10,8 +10,8 @@ I copied a lot of stuff from the internet:
 
 ### Notes:
 - This config is mainly for Fedora 39 running a on TUXEDO Pulse 14 Gen3 Version 1.0
-- The screenmode is currently set to 2880x1800@96.011Hz, because at 120Hz I have flickering in Firefox and Thunderbird
-- Adaptive Sync is on
+- ~The screenmode is currently set to 2880x1800@96.011Hz, because at 120Hz I have flickering in Firefox and Thunderbird~
+- Adaptive Sync is ~on~ off
 
 ### Screenshot:
 ![Screenshot sway](screenshot.png "Screenshot of Sway")
