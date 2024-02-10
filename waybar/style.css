@@ -134,3 +134,9 @@ window#waybar {
     color: rgba(238, 46, 36, 1);
 }
 
+tooltip {
+     border-radius: 10px;
+     background-color: #1e1e1e;
+	 border:1px solid #f7f7f7;
+	 padding:5px;
+}
