@@ -26,17 +26,11 @@ selectpic(){
 
 #########################-FUNCTION FOR TAKING AN ACTION ON THE SELECTED WALLPAPER-#########################
 action(){
-		whattodo=$(echo -e "view\nset\nset (permanant)\nset (permanant light)\nset (permanant dark)\nset (permanant light-dark)" | rofi -dmenu -p "whatcha wanna do with it? ($wallpaper)")
+		whattodo=$(echo -e "view\nset\nset (permanant)" | rofi -dmenu -p "whatcha wanna do with it? ($wallpaper)")
     if [[ $whattodo == "set" ]]; then
         set_wall
     elif [[ $whattodo == "set (permanant)" ]]; then
       set_permanant
-    elif [[ $whattodo == "set (permanant dark)" ]]; then
-      set_permanant_dark
-    elif [[ $whattodo == "set (permanant light)" ]]; then
-      set_permanant_light
-    elif [[ $whattodo == "set (permanant light-dark)" ]]; then
-      set_permanant_light_dark
     else
         view_wall
     fi
@@ -74,30 +68,6 @@ set_permanant(){
   ln -fs $dir$wallpaper $HOME/.wallpaper
   killall feh &
   swaybg -m fill -i $HOME/.wallpaper
-}
-set_permanant_dark(){
-  set_wall
-  ln -fs $dir$wallpaper $HOME/.wallpaper
-  killall feh &
-  swaybg -m fill -i $HOME/.wallpaper &
-  ln -fs $waybardir/dark.css $waybardir/colors.css
-  sh /home/$USER/.local/bin/waybarreload.sh
-}
-set_permanant_light(){
-  set_wall
-  ln -fs $dir$wallpaper $HOME/.wallpaper
-  killall feh &
-  swaybg -m fill -i $HOME/.wallpaper &
-  ln -fs $waybardir/light.css $waybardir/colors.css
-  sh /home/$USER/.local/bin/waybarreload.sh
-}
-set_permanant_light_dark(){
-  set_wall
-  ln -fs $dir$wallpaper $HOME/.wallpaper
-  killall feh &
-  swaybg -m fill -i $HOME/.wallpaper &
-  ln -fs $waybardir/light_dark.css $waybardir/colors.css
-  sh /home/$USER/.local/bin/waybarreload.sh
 }
 ########################################################################################################
 
