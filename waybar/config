@@ -8,21 +8,13 @@
 
 "modules-center": ["hyprland/submap"],
 
-"modules-right": ["hyprland/workspaces", "cpu", "memory", "disk", "temperature", "bluetooth", "network", "backlight", "pulseaudio", "battery", "custom/updates", "tray", "idle_inhibitor", "keyboard-state", "clock", "custom/brand"],
+"modules-right": ["hyprland/workspaces", "cpu", "memory", "disk", "temperature", "battery", "bluetooth", "network", "backlight", "pulseaudio", "custom/updates", "tray", "idle_inhibitor", "keyboard-state", "clock", "custom/brand"],
    
 // Modules configuration
 
 
 "hyprland/workspaces": {
      "format": "{icon}",
-//	 "format-icons": {
-//	 "1": "",
-//	 "2": "",
-//   "3": "",
-//	 "4": "",
-//   "5": "",
-//	 "6": "",
-//        },
      "persistent-workspaces": {
 		"*": [ 1, 2, 3, 4 ], 
      },
@@ -37,7 +29,7 @@
 	"on-click": "activate",
 	"on-click-middle": "close",
     "ignore-list": [
-	    "kitty"
+	    
 	],
 },
 
@@ -66,8 +58,9 @@
 
 "disk": {
 	"interval": 30,
-	"format": "{percentage_used}:",
+	"format": "",
 	"unit": "GB",
+	"tooltip-format": "Festplatte: {percentage_used} %",
 },
 
 "clock": {
@@ -78,22 +71,39 @@
 },
 
 "cpu": {
-        "format": "{usage:2}:",
-        "tooltip": false,
-	"on-click": "exec kitty htop"
+     "format": "{icon}",
+     "format-icons": [
+	 "<span color='#8eb33b'></span>", 
+	 "<span color='#83b33b'></span>", 
+	 "<span color='#FFE377'></span>", 
+	 "<span color='#FFE377'></span>", 
+	 "<span color='#E09690'></span>", 
+	 "<span color='#E09690'></span>",
+	 "<span color='#C75646'></span>", 
+	 "<span color='#C75646'></span>",],
+	 "tooltip-format": "CPU: {usage:2} %", 
+	"on-click": "exec kitty htop",
 },
 
 "memory": {
-        "format": "{}:"
+        "format": "",
+		"tooltip-format": "Arbeitsspeicher: {} %",
 },
 
 "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}:{icon}",
-        "format": "{temperatureC}:{icon}",
-        "format-icons": ["", "", ""]
+        "format-critical": "{temperatureC}:{icon}",
+        "format": "{icon}",
+		"tooltip-format": "{temperatureC} °C",
+        "format-icons": [
+		"<span color='#8eb33b'></span>",
+		"<span color='#8eb33b'></span>",
+		"<span color='#8eb33b'></span>",
+		"<span color='#FFE377'></span>",
+		"<span color='#E09690'></span>",
+		"<span color='#C75646'></span>"]
 },
 
 "backlight": {
@@ -115,7 +125,12 @@
         "tooltip-format": "{capacity}%  {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+		"<span color='#C75646'></span>",
+		"<span color='#E09690'></span>",
+		"<span color='#FFE377'></span>",
+		"<span color='#8eb33b'></span>",
+		"<span color='#8eb33b'></span>"]
 },
 
 "network": {

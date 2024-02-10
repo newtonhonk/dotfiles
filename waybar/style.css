@@ -46,23 +46,12 @@
 }
 
 #cpu {
-    border-radius: 10px 0 0 10px;
-    padding: 2px 10px 2px 15px;
-    margin-left:10px;
 }
 
 #clock {
     border-radius: 0 10px 10px 0;
     margin-right:10px;
-    padding: 2px 15px 2px 10px;
-}
-
-#pulseaudio, #battery, #battery.charging, #backlight {
-    color: #8eb33b;	
-}
-
-#network, #bluetooth {
-    color: #8eb33b;
+    padding: 2px 15px 2px 8px;
 }
 
 #network.disconnected, #bluetooth.disabled, #keyboard-state label.capslock.locked {
@@ -70,7 +59,7 @@
 }
 
 #cpu, #temperature, #disk, #memory {
-    color: #72b3cc;
+    color: #8eb33b;
 }
 
 #custom-updates {
@@ -82,23 +71,22 @@ window#waybar {
     background-color: transparent;
 }
 
-#workspaces, #taskbar {
-		background:transparent;
-		border-radius:10px;
+#workspaces {
+		border-radius:10px 0 0 10px;
 		margin-left:8px;
-		padding:1px 4px 1px 4px;
+		padding:1px 0px 1px 10px;
 }
 
 #taskbar {
 		background:transparent;
 		border-radius: 0 4px 4px 0;
-		margin-left:10px;
+		margin-left:4px;
 }
 
 #taskbar button {
 		margin-right:4px;
-		background: rgba(0,0,0,0.2);
-		padding:1px 6px;
+		background: rgba(0,0,0,0.1);
+		padding:1px 5px;
 		border-radius: 200px;
 }
 
@@ -117,22 +105,20 @@ window#waybar {
 }
 
 #workspaces button {
-    color: #1e1e1e;
-	padding:0 4px 2px 5px;
-	margin:0 0 0 1px;
-	font-size:10px;
-	border-radius:200px;
-	min-width:21px;
+    color: transparent;
+	padding:0px 2px;
+	margin:10px 4px;
+	font-size:0px;
+	border-radius:10px;
+	min-width:4px;
+	background:rgba(255,255,255,0.1);
+	min-height:4px;
+	border:1px solid #f7f7f7;
 }
 
-#workspaces button.active  {
+#workspaces button.active, #workspaces button:hover {
     color: #f7f7f7;
-	background:#1e1e1e;
-}
-
-#workspaces button:hover {
-    color: #f7f7f7;
-	background:#1e1e1e;
+	background:#f7f7f7;
 }
 
 #workspaces button.urgent {
@@ -148,4 +134,3 @@ window#waybar {
     color: rgba(238, 46, 36, 1);
 }
 
-@import url("colors.css");
