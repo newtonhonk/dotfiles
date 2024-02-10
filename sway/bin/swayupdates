@@ -1,6 +1,0 @@
-#!/bin/bash
-UPDATES=$(dnf check-update | grep "updates" | wc -l)
-if [[ $UPDATES > 0  ]]
-then
-    echo "${UPDATES} "
-fi
