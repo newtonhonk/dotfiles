@@ -25,7 +25,7 @@ I got inspired by a lot of stuff from the internet:
 - The screenmode is currently set to 2880x1800@120.00000hz.
 
 ### Screenshots:
-![Screenshot Hyprpland](screenshot.png "Screenshot of Hyprland and Kitty")
-![Screenshot Hyprpland](screenshot2.png "Screenshot of Hyprland and Rofi")
+![Screenshot Hyprpland](screenshot01.png "Screenshot of Hyprland and Kitty")
+![Screenshot Hyprpland](screenshot02.png "Screenshot of Hyprland and Rofi")
 
 ### Have fun!
