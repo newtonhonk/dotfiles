@@ -13,7 +13,8 @@ I got inspired by a lot of stuff from the internet:
 - This config is mainly for Fedora 39 running a on TUXEDO Pulse 14 Gen3 Version 1.0
 - ~The screenmode is currently set to 2880x1800@120.00000hz.
 
-### Screenshot:
-![Screenshot sway](screenshot.png "Screenshot of Sway")
+### Screenshots:
+![Screenshot Hyprpland](screenshot1.png "Screenshot of Hyprland and Kitty")
+![Screenshot Hyprpland](screenshot2.png "Screenshot of Hyprland and Rofi")
 
 ### Have fun!
