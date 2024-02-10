@@ -92,17 +92,22 @@ window#waybar {
 #taskbar {
 		background:transparent;
 		border-radius: 0 4px 4px 0;
-		margin-left:12px;
+		margin-left:10px;
 }
 
 #taskbar button {
-		opacity:0.75;
-		margin-right:10px;
+		margin-right:4px;
+		background: rgba(0,0,0,0.2);
+		padding:1px 6px;
+		border-radius: 200px;
 }
 
 #taskbar button:hover {
-		opacity:1;
-		background:transparent;
+		background: #1f1f1f;
+}
+
+#taskbar button.active {
+		background: #1f1f1f;
 }
 
 #submap {
