@@ -30,7 +30,7 @@
 
 "wlr/taskbar": {
 	"format": "{icon}",
-	"icon-size": 20,
+	"icon-size": 18,
 	"active-first": false,
 	"icon-theme": "Adwaita",
 	"tooltip-format": "{title}",
