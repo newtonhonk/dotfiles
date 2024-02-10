@@ -1,0 +1,17 @@
+#workspaces button  {
+    color: #000;
+}
+
+#workspaces button.active  {
+    color: #f7f7f7;
+	background:#1e1e1e;
+}
+
+#workspaces button:hover {
+    color: #f7f7f7;
+	background:#1e1e1e;
+}
+
+#workspaces button.urgent {
+    color: #f7f7f7;
+}

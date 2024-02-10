@@ -1,0 +1,146 @@
+* {
+    border:        none;
+    border-radius: 0;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+    padding:0;
+    font-family:"monospace";
+	border-style: none;
+}
+
+#cpu,
+#memory,
+#disk,
+#battery,
+#clock,
+#network,
+#network.disconnected,
+#tray,
+#bluetooth,
+#temperature,
+#idle_inhibitor,
+#keyboard-state,
+#custom-updates,
+#pulseaudio,
+#backlight,
+#taskbar,
+#workspaces,
+#submap,
+#custom-brand
+{ 
+    background:#1e1e1e;
+	font-size:14px;
+    color: #ffffff;    
+    padding: 2px 8px;
+    margin:10px 0 0 0;
+}
+
+#custom-brand {
+    margin-right:12px;
+	border-radius:200px;
+	padding: 2px 6px 2px 6px;
+	background: #8eb33b;
+	color:#1e1e1e;
+	border:4px solid #1e1e1e;
+}
+
+#cpu {
+    border-radius: 10px 0 0 10px;
+    padding: 2px 10px 2px 15px;
+    margin-left:10px;
+}
+
+#clock {
+    border-radius: 0 10px 10px 0;
+    margin-right:10px;
+    padding: 2px 15px 2px 10px;
+}
+
+#pulseaudio, #battery, #battery.charging, #backlight {
+    color: #8eb33b;	
+}
+
+#network, #bluetooth {
+    color: #8eb33b;
+}
+
+#network.disconnected, #bluetooth.disabled, #keyboard-state label.capslock.locked {
+    color: #8b0000;
+}
+
+#cpu, #temperature, #disk, #memory {
+    color: #72b3cc;
+}
+
+#custom-updates {
+    color: #c75646;
+}
+
+window#waybar {
+    color: #000;
+    background-color: transparent;
+}
+
+#workspaces, #taskbar {
+		background:transparent;
+		border-radius:10px;
+		margin-left:8px;
+		padding:1px 4px 1px 4px;
+}
+
+#taskbar {
+		background:transparent;
+		border-radius: 0 4px 4px 0;
+		margin-left:12px;
+}
+
+#taskbar button {
+		opacity:0.75;
+		margin-right:10px;
+}
+
+#taskbar button:hover {
+		opacity:1;
+		background:transparent;
+}
+
+#submap {
+    background: #C75646;
+    border-radius:10px;
+    margin-left:10px;
+}
+
+#workspaces button {
+    color: #1e1e1e;
+	padding:0 4px 2px 5px;
+	margin:0 0 0 1px;
+	font-size:10px;
+	border-radius:200px;
+	min-width:21px;
+}
+
+#workspaces button.active  {
+    color: #f7f7f7;
+	background:#1e1e1e;
+}
+
+#workspaces button:hover {
+    color: #f7f7f7;
+	background:#1e1e1e;
+}
+
+#workspaces button.urgent {
+    color: #f7f7f7;
+	background:#C75646;
+}
+
+#battery.warning {
+   color: rgba(255, 210, 4, 1);
+}
+
+#battery.critical {
+    color: rgba(238, 46, 36, 1);
+}
+
+@import url("colors.css");
