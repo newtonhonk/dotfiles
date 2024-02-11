@@ -1,7 +1,10 @@
 # Dotfiles for Fedora Linux (mainly Hyprland)
 
 ### Disclaimer:
-Just a bunch of config files for my personal hyprland setup with Fedora Linux (currently 39). **Use at unkown risk!**
+Just a bunch of config files for my personal hyprland setup with Fedora Linux (currently 39). 
+
+**Use at unkown risk!**
+
 I got inspired by a lot of stuff from the internet:
 - hyprland and wlogout conf based on (https://gitlab.com/stephan-raabe)
 - colors based on (https://color.smyck.org/)
