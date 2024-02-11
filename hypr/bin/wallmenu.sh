@@ -7,14 +7,12 @@
 #
 dir="/home/$USER/Bilder/Wallpaper/" # wallpapers folder, change it to yours, make sure that it ends with a /
 cd $dir
-wallpaper="none is selected" 
 set="swaybg -m fill -i "
 view="feh"
-waybardir="/home/$USER/.config/waybar"
 
 ########################-FUNCTION FOR SELECTING A WALLPAPER-###################
 selectpic(){
-    wallpaper=$(ls $dir | rofi -dmenu -p "select a wallpaper: ($wallpaper)")
+    wallpaper=$(ls $dir | rofi -dmenu -p "🔴   Just what do you think you're decorating, Dave?")
 
     if [[ $wallpaper == "q" || $wallpaper == "" ]]; then
         killall feh && exit 
