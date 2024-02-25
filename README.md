@@ -21,7 +21,7 @@ I got inspired by a lot of stuff from the internet:
 - SUPER + CTRL + B: firefox --private-window
 - SUPER + T: tuba (Mastodon)
 - SUPER + M: thunderbird Wayland
-- SUPER + F: tautilus
+- SUPER + F: nautilus
 
 ### Notes:
 - This config is mainly for Fedora 39 running a on TUXEDO Pulse 14 Gen3 Version 1.0
